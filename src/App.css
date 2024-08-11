@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 1.18px;
+}
+
+.full-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-container {
+  width: 80%;
+  max-width: 600px; /* Ensure it doesn’t get too wide */
+  height: 50px;
+  margin-top: 6%;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input {
+  width: 70%;
+  padding: 15px;
+  border: none;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.search-container button {
+  padding: 15px;
+  width: 30%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.quote p {
+  margin-top: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2% 5% 5% 5%;
+}
+
+.button-container {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  background-color: white;
+  background-image: url(./assets/sw.png);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 20%;
+}
+
+.blinking-text p {
+  font-size: 1.2rem;
+  font-family: Amsterdam, sans-serif;
+  color: #ffffff;
+  animation: smooth-blink-animation 2s ease-in-out infinite;
+}
+
+.blinking-text span {
+  color: red;
+}
+
+@keyframes smooth-blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@font-face {
+  font-family: 'Amsterdam';
+  src: local('Amsterdam'), url(./font/Amsterdam.ttf) format('truetype');
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+
+  .full-container{
+    max-width: 100%;
+    min-height: 100vh;
+  }
+
+  .search-container {
+    width: 90%;
+    height: 40px;
+    margin-top: 6%;
+  }
+
+  .search-container input {
+    width: 65%;
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+
+
+  .quote p {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 2% 2%;
+  }
+
+  .button-container {
+    width: 7rem;
+    height: 3.5rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  img {
+    width: 25%;
+  }
+
+  .blinking-text p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .full-container{
+    max-width: 100%;
+    min-height: 100vh;
+    /* border: 2px solid red; */
+    /* padding: auto 20px; */
+  }
+
+  .container{
+
+    /* border: 2px solid red; */
+    padding-bottom:1rem;
+  }
+
+  .search-container {
+    width: 100%;
+    height: 35px;
+    margin-top: 2rem;
+    /* border: 2px solid red; */
+  }
+
+  .search-container input {
+    width: 60%;
+    padding: 8px;
+    font-size: 0.6rem;
+  }
+
+  .quote p {
+    font-size: 0.5rem;
+  }
+
+  .button-container {
+    width: 7rem;
+    height: 3.5rem;
+  }
+
+  a {
+    font-size: 0.6rem;
+  }
+
+  img {
+    width: 30%;
+  }
+
+  .blinking-text p {
+    font-size: 0.6rem;
+  }
+}
