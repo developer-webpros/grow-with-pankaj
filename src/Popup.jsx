@@ -1,11 +1,12 @@
 import React from "react";
+import "./App.css";
 
 const Popup = ({ show, onClose, children }) => {
   if (!show) return null;
 
   return (
     <div style={popupStyles.overlay}>
-      <div style={popupStyles.content}>
+      <div className="popupContent">
         <button onClick={onClose} style={popupStyles.closeButton}>
           X
         </button>
@@ -28,14 +29,7 @@ const popupStyles = {
     alignItems: "center",
     zIndex: 1000,
   },
-  content: {
-    backgroundColor: "#fff",
-    padding: "10px",
-    borderRadius: "15px",
-    position: "relative",
-    width: "25%",
-    maxWidth: "100%",
-  },
+ 
   closeButton: {
     position: "absolute",
     top: "10px",
