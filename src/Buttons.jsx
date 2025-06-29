@@ -4,7 +4,6 @@ import Increase from "./assets/increase.png";
 import GoogleSearchForm from "./GoogleSearchForm";
 import Tradingview from "./assets/tradingview.png";
 import Chatgpt from "./assets/chatgpt.png";
-import Blackbox from "./assets/blackbox.png";
 import Idea from "./assets/idea.png";
 import News from "./assets/news.png";
 import Youtube from "./assets/youtube.png";
@@ -14,8 +13,6 @@ import Heatmap from "./assets/heatmap.png";
 import ButtonComponent from "./ButtonComponent";
 import Quote from "./Quote"
 import BlinkingTex from './BlinkingText';
-import Swing from "./assets/swing.png"
-import Swing2 from "./assets/swing2.png"
 import RiskCalculator from "./RiskCalculator";
 
 
@@ -52,16 +49,18 @@ function Buttons() {
           />
 
           <ButtonComponent
+            href={"https://www.angelone.in/login/"}
+            name={"Angel One"}
+            img={Increase}
+          />
+
+          <ButtonComponent
             href={"https://chatgpt.com/"}
             name={"ChatGpt"}
             img={Chatgpt}
           />
 
-          <ButtonComponent
-            href={"https://www.blackbox.ai/"}
-            name={"BlackBox"}
-            img={Blackbox}
-          />
+          
 
          
 
@@ -72,8 +71,8 @@ function Buttons() {
           />
 
           <ButtonComponent
-            href={"https://in.tradingview.com/community/"}
-            name={"Ideas"}
+            href={"https://chartink.com/screener/copy-cpr-by-kgs-ncpr-for-tomorrow-464"}
+            name={"For Tomorrow"}
             img={Idea}
           />
 
