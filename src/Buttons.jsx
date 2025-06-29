@@ -76,6 +76,12 @@ function Buttons() {
             img={Idea}
           />
 
+            <ButtonComponent
+            href={"https://chartink.com/screener/copy-cpr-by-kgs-ncpr-for-tomorrow-464"}
+            name={"For Next Week"}
+            img={Idea}
+          />
+
           <ButtonComponent
             href={"https://in.tradingview.com/screener/"}
             name={"Screener"}
