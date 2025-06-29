@@ -60,9 +60,6 @@ function Buttons() {
             img={Chatgpt}
           />
 
-          
-
-         
 
           <ButtonComponent
             href={"https://in.tradingview.com/news/#markets "}
@@ -79,6 +76,12 @@ function Buttons() {
             <ButtonComponent
             href={"https://chartink.com/screener/copy-cpr-by-kgs-ncpr-for-tomorrow-464"}
             name={"For Next Week"}
+            img={Idea}
+          />
+          
+            <ButtonComponent
+            href={"https://chartink.com/screener/next-month-narrow-cpr"}
+            name={"For Next Month"}
             img={Idea}
           />
 
